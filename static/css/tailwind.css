@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply font-Roboto
+}
+
+/* Classes with importance */
+.flex-imp{
+    @apply !flex
+}
+
+.block-imp{
+    @apply !block
+}
+
+.hidden-imp{
+    @apply !hidden
+}
+
+.translate-x-imp{
+    @apply !translate-x-0
+}
+
+.header{
+    @apply z-50 bg-white h-fit w-screen shadow-sm overflow-x-hidden
+}
+
+.logo{
+    @apply text-blue-500 text-3xl font-bold
+}
+
+.btn{
+    @apply px-6 py-2 rounded-md text-center transition-colors duration-500
+}
+
+.btn-primary{
+    @apply bg-blue-500 text-white hover:bg-blue-600
+}
+
+.btn-secondary{
+    @apply rounded-md shadow-sm border focus:outline-none relative bg-gray-800 hover:bg-gray-900 border-transparent focus:ring-gray-500 focus:ring-2 focus:ring-offset-2 text-base text-white
+}
+
+.hamburger{
+    @apply bg-white rounded-md p-2 relative h-[40px] w-[40px] flex md:hidden justify-center items-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500
+}
+
+.hamburger div{
+    @apply absolute
+}
+
+.hamburger-close{
+    @apply block
+}
+
+.hamburger-open{
+    @apply hidden
+}
+
+.mobile-nav{
+    @apply hidden flex-col gap-6 w-full px-6 py-8 h-[calc(100vh-80px)] translate-x-full transition-all duration-500 ease-in-out
+}
+
+.main{
+    @apply min-h-[calc(100vh-160px)] w-screen overflow-x-hidden
+}
+
+.footer{
+    @apply h-[80px] w-screen overflow-x-hidden text-balance text-sm text-center flex justify-center items-center shadow-[0_-4px_6px_-2px_rgba(0,0,0,0.1)]
+}
